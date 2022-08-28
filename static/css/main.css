@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+  }
 /* imports */
 
 
@@ -214,11 +217,11 @@ section#hero-section {
 }
 
 .btn:hover{
-    background-color: #82ACBF;
+    background-color: #223D6D;
 }
 
 .field:focus{
-    border: 2px solid #9DD2E4;
+    border: 2px solid #142440;
     background-color: #fff;
 }
 
@@ -241,6 +244,38 @@ section#hero-section {
 	}
 }
 /* end of contact form */
+
+.background {
+    
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: cover;
+    background-position: center; */
+    padding: 300px;
+    background-image: url('/static/Imgs/waves3.svg');
+    /* background-image: url('/static/Imgs/waves2.png'); */
+    
+}
+.box{
+    margin-top: -240px;
+    width: 40%;
+    margin-right: 0%;
+    margin-left: 60%;
+}
+
+.box h1{
+    color:#EDF2EF;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 2px;
+}
+.index-head{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
 
 
 /* Responsive css */
