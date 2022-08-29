@@ -481,7 +481,7 @@ section#hero-section {
   font-size: 22px;
   font-weight: 400;
   color: #312e2e;
-  width: 400px;
+  width: 300px;
   white-space: nowrap;
   overflow: hidden;
   border-right: 5px solid #142440;
@@ -489,7 +489,7 @@ section#hero-section {
 }
 @keyframes types {
    from { width: 0; }
-   to { width:400px; }
+   to { width:300px; }
 }
  
 @keyframes cursorblink{
@@ -512,11 +512,11 @@ section#hero-section {
 
     .typingEffect1{
         font-size: 20px;
-        width: 350px;  
+        width: 246px;  
     }
     @keyframes types {
         from { width: 0; }
-        to { width:350px; }
+        to { width:246px; }
      }
 }
 
