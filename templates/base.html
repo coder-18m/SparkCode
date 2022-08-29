@@ -32,7 +32,7 @@
                 <ul class="primary-menu">
                     <li><a href="{{ url_for ('index') }}">Home</a></li>
                     <li><a href="{{ url_for('.index', _anchor='exactlocation') }}">About</a></li>
-                    <li><a href="#">Class</a></li>
+                    <li><a target="_blank" href="https://sps81-my.sharepoint.com/:p:/g/personal/miller3192_sps81_org/EZacHQlAlTZEse5A92bFFmEBqwVXsdpsyHG1ESMK902w-g?e=fEJizk">Resources</a></li>
                     <li><a href="{{ url_for ('contact') }}">Contact</a></li>
                 </ul>
             </div>
@@ -50,5 +50,56 @@
     </script>
 
     {% block body %} {% endblock %}
+
+    <footer>
+        <div class="containerb">
+          <div class="sec aboutus">
+            <h2>About</h2>
+            <p>The Latah Valley is a unique, special, and attractive area of the city of Spokane with a deep geologic and human history. The Latah Valley is home to people who deeply appreciate the attributes and treasures of conveniences to downtown/airport balanced with a rural feel, active farming, and a vibrant wildlife corridor home to moose, deer, coyote, osprey, bald eagle, and many other creatures.
+                Despite what should be protected, preserved, and a wisely planned for evolution of this area, the Latah Valley is under tremendous pressure by the City of Spokane and development interests whose pursuits are threatening not only the integrity and specialness of this area but literally the lives of the people and wildlife who call the Latah Valley home.
+                Latah Valley deserves to be protected!</p>
+    
+            <ul class="sci">
+              <li>
+                <a class="instagram" href="https://www.instagram.com/sparkcode_official/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="sec quickLinks">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="{{ url_for('.index', _anchor='exactlocation') }}">About</a></li>
+              <li><a href="{{ url_for ('contact') }}">Contact</a></li>
+              <li><a href="{{ url_for ('privacy') }}">Privacy Policy</a></li>
+              <li><a href="{{ url_for ('terms') }}">Terms and Conditions</a></li>
+              <!-- register link formally here rip -->
+            </ul>
+          </div>
+          <div class="sec contact">
+            <h2>Contact Info</h2>
+            <ul class="info">
+              <!--
+              <li>
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <span>Address</span>
+              </li>
+              -->
+              <li>
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <p><a href="mailto:millercm108@gmail.com">millercm108@gmail.com</a></p>
+              </li>
+              <!-- <li>
+                <span><i class="fa-solid fa-phone"></i></span>
+                <p><a href="tel:15097950048">+1 509 795 0048</a></p>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div class="copyrightText">
+        <p>© 2022 SparkCode</p>
+    
+      </div>
+
 </body>
 </html>

@@ -29,6 +29,159 @@ body{
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
 }
+.about-hr{
+    background: #142440;
+    height: 5px;
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: 10px;
+}
+/*footer*/
+.fa-instagram{
+    font-size: 24px;
+    color: white;
+  }
+  
+  footer{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #E6E5E1;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #142440;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  footer .containerb{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  footer .containerb .sec{
+    margin-right: 30px;
+  }
+  footer .containerb .sec.aboutus{
+    width: 40%;
+  }
+  footer .containerb h2{
+    position: relative;
+    color: #E6E5E1;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  footer .containerb h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+  }
+  footer p{
+    color: #E6E5E1;
+  }
+  .sci{
+    margin-top: 20px;
+    display: flex;
+  }
+  .sci li{
+    list-style: none;
+  }
+  .sci li a {
+    display: inline-block;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+  
+  }
+  .sci li a:hover{
+  }
+  .sci li a .fa{
+    color: #fff;
+    font-size: 20px;
+  }
+  .quickLinks{
+    position: relative;
+    width: 25%;
+  }
+  .quickLinks ul li{
+    list-style: none;
+  }
+  .quickLinks ul li a{
+    color: #E6E5E1;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .quickLinks ul li a:hover{
+    color: #fff;
+  }
+  .contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+  }
+  .contact .info{
+    position: relative;
+  }
+  .contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+  }
+  .contact .info li span:nth-child(1){
+    color: #black;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .contact .info li span{
+    color: #E6E5E1;
+  }
+  .contact .info li a{
+    color: #E6E5E1;
+    text-decoration: none;
+  }
+  .contact .info li a:hover{
+    color: #fff;
+  }
+  .copyrightText{
+    font-family: 'Barlow Condensed', sans-serif;
+    width: 100%;
+    background: #142440;
+    padding: 8px 100px;
+    text-align: center;
+    color: #E6E5E1;
+  }
+  @media (max-width: 991px) {
+    footer{
+      padding: 40px;
+    }
+    footer .containerb{
+      flex-direction: column;
+    }
+    footer .container .sec{
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+    footer .containerb .sec.aboutus, .quickLinks, .contact{
+      width: 100%;
+    }
+    .copyrightText{
+      padding: 8px 40px;
+    }
+  }
+/* end of footer */  
+
+
+
+
+
 .header-area {
     background: #EDF2EF;
     width: 100%;
@@ -77,10 +230,10 @@ body{
     padding: 15px 10px;
     transition: .5s;
 }
-.primary-menu a:hover,
+/* .primary-menu a:hover,
 .primary-menu .active {
-    color:#212738;   
-}
+    text-decoration: underline;  
+} */
 .primary-menu li a:after {
     content: "";
     position: absolute;
@@ -153,7 +306,7 @@ section#hero-section {
 }
 
 .left{
-	background: url("/static/Imgs/email3.png") no-repeat center;
+	background: url("/static/Imgs/email5.png") no-repeat center;
 	background-size: cover;
 	height: 100%;
 }
@@ -207,7 +360,7 @@ section#hero-section {
   font-family: 'Ubuntu', sans-serif;
 	width: 100%;
 	padding: 0.5rem 1rem;
-	background-color: #212738;;
+	background-color: #142440;
 	color: #fff;
 	font-size: 1.1rem;
 	border: none;
@@ -245,20 +398,16 @@ section#hero-section {
 }
 /* end of contact form */
 
-.background {
+
+
+
+.mobile-background {
+
     
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-size: cover;
-    background-position: center; */
-    padding: 300px;
-    background-image: url('/static/Imgs/waves3.svg');
-    /* background-image: url('/static/Imgs/waves2.png'); */
+    
     
 }
-.box{
+/* .box{
     margin-top: -240px;
     width: 40%;
     margin-right: 0%;
@@ -270,15 +419,200 @@ section#hero-section {
     font-size: 30px;
     font-family: 'Ubuntu', sans-serif;
     letter-spacing: 2px;
-}
+} */
 .index-head{
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.about-p{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-right: 6px;
+    margin-left: 6px;
+    margin-bottom: 20px;
+}
+.background{
+    display: none;
+}
+.desk2{
+    display: none;
+}
+.card2{
+  transition-timing-function: ease-in;
+  transition: 0.9s;
+  background: #fff;
+  border-radius: 16px 16px 16px 16px;
+  padding: 5px;
+  margin:auto;
+  text-align: center;
+    max-width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.fa-arrow-right-long{
+  font-size: 30px;
+  color: black;
+}
+
+.card-container{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin:auto;
+  max-width: 440px;
+  display: flex;
+  flex-direction: row;
+
+}
+.contact-card{
+  margin-left: 15px;
+}
+.contact-card h3, .resources-card h3{
+  color: black;
+}
+.resources-card{
+  margin-left: 15px;
 }
 
 
-/* Responsive css */
+/*----------------KEYFRAMES------------------------*/
+.typingEffect1 {
+  font-family: monospace;
+  font-size: 22px;
+  font-weight: 400;
+  color: #312e2e;
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 5px solid #142440;
+  animation: types 4s steps(30, end), cursorblink 1s step-end infinite;
+}
+@keyframes types {
+   from { width: 0; }
+   to { width:400px; }
+}
+ 
+@keyframes cursorblink{
+  from, to {border-color: transparent}
+  50%{ border-color:#142440}
+}
+
+
+
+
+
+/*==========================Responsive css======================= */
+@media (max-width: 420px){
+  .card2{
+    max-width: 190px;
+  }
+  .contact-card{
+    margin-right: 15px;
+  }
+
+    .typingEffect1{
+        font-size: 20px;
+        width: 350px;  
+    }
+    @keyframes types {
+        from { width: 0; }
+        to { width:350px; }
+     }
+}
+
+@media (min-width: 620px){
+/* mobile background switch */
+    .mobile-background{
+        display: none;
+    }
+    .background{
+        display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+    }
+    
+    /* .background{
+        width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    } */
+}
+
+@media (min-width: 820px){
+    .desk img{
+        width: 360px;
+    }
+    .title h1{
+        font-size: 40px;
+    }
+}
+@media (min-width: 900px) and (max-width:1070px){
+  .about-container{
+    margin-right:20px;
+    margin-left:20px;
+  }
+}
+
+@media (min-width: 980px){
+    .desk img{
+        width: 400px;
+    }
+    .title h1{
+        font-size: 46px;
+    }
+    .background{
+        justify-content: space-around;
+       }
+}
+@media (max-width:1070px){
+  .resources-card:hover, .contact-card:hover{
+    margin-top: -10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+@media (min-width: 1070px){
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .card-container{
+    flex-direction: column;
+    margin:0px;
+  }
+  .about-container{
+    max-width: 780px;
+  }
+  .contact-card{
+    margin-top: 20px;
+  }
+  .card2{
+    transition: 0.5s all ease-in-out;
+  }
+  .resources-card:hover, .contact-card:hover{
+    transform: scale(1.09);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .about-hr{
+    width: 10%;
+    margin-left: 45%;
+  }
+}
+
+@media (min-width: 1150px){
+   .background{
+    justify-content: space-around;
+   }
+   .title h1{
+    font-size: 50px;
+   }
+   .desk2{
+    display: block;
+}
+}
+
 @media only screen and (max-width: 900px) {
     .site-nav-menu {
         float: none;
@@ -294,6 +628,9 @@ section#hero-section {
     }
     .primary-menu a {
         color: #EDF2EF;
+    }
+    .primary-menu a:hover {
+        text-decoration: underline;
     }
     .primary-menu li {
         display: block;
