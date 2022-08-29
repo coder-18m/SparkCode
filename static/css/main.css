@@ -512,11 +512,11 @@ section#hero-section {
 
     .typingEffect1{
         font-size: 20px;
-        width: 246px;  
+        width: 266px;  
     }
     @keyframes types {
         from { width: 0; }
-        to { width:246px; }
+        to { width:266px; }
      }
 }
 
