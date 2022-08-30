@@ -7,7 +7,7 @@
 ## Usage
 
 - Displays information regarding SparkCode's narritives and initiative
-- Provides page to contact SparkCode directly via email at contactsparkcode/contact.org
+- Provides page to contact SparkCode directly via email at contactsparkcode.org/contact
 - Provies class resources for students
 
 ## Acknowledgements
