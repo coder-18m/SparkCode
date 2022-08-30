@@ -39,7 +39,7 @@ def contact():
         email = request.form['email']
         message = request.form['message']
 
-        msg = Message(f"SparkCode Website: Message from {name}", sender=email, recipients=['millercm108@gmail.com'])
+        msg = Message(f"SparkCode Website: Message from {email} ({name})", sender=email, recipients=['millercm108@gmail.com'])
         msg.body = message
         mail.send(msg)
 
