@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USERNAME'] = 'millercm108@gmail.com'
-app.config['MAIL_PASSWORD'] = 'yfdmviympwwcewxs'
+app.config['MAIL_PASSWORD'] = 'mexjhqtrifkdthsz'
 app.config['MAIL_USE_SSL'] = True
 
 mail = Mail(app)
